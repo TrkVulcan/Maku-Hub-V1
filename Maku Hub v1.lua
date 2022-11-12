@@ -65,6 +65,8 @@ local Toggle = Tab:CreateToggle({
     end
 })
 
+local Label = Tab:CreateLabel("Not Working")
+
 --Player
 
 local Tab = Window:CreateTab("Player") -- Title, Image
