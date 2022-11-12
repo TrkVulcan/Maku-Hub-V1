@@ -65,6 +65,7 @@ local Toggle = Tab:CreateToggle({
     end
 })
 
+
 local Label = Tab:CreateLabel("Not Working")
 
 --Player
@@ -115,6 +116,17 @@ local Toggle = Tab:CreateToggle({
 })
 local Label = Tab:CreateLabel("Gives You INF Stamina")
 
+local Toggle = Tab:CreateToggle({
+	Name = "Auto Eat Souls",
+	CurrentValue = false,
+	Flag = "Souls", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		-- The function that takes place when the toggle is pressed
+    		-- The variable (Value) is a boolean on whether the toggle is true or false
+	end,
+})
+
+local Label = Tab:CreateLabel("Auto Eats Souls-Not Working")
 
 
 local x = Tab:CreateToggle({
@@ -491,3 +503,35 @@ local Button = Tab:CreateButton({
 		-- The function that takes place when the button is pressed
 	end,
 })
+
+
+
+local Tab = Window:CreateTab("ESP") -- Title, Image
+local Section = Tab:CreateSection("Player ESP")
+local Button = Tab:CreateButton({
+	Name = "Player ESP",
+	Callback = function()
+        local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Highlight = Instance.new("Highlight")
+Highlight.Name = "Highlight"
+function ApplyToCurrentPlayers()
+    for i,player in pairs(Players:GetChildren()) do 
+        repeat wait() until player.Character
+        if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+            local HighlightClone = Highlight:Clone()
+            HighlightClone.Adornee = player.Character
+            HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+            HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            HighlightClone.Name = "Highlight"
+        end
+    end
+end    
+RunService.Heartbeat:Connect(function()
+    ApplyToCurrentPlayers()
+end)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+local Label = Tab:CreateLabel("Rejoin To Turn Off")
