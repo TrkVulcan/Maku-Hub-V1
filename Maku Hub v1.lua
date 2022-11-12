@@ -146,6 +146,13 @@ spawn(function()
     end
 end)
 
+
+--CREDITS
+
+local Tab = Window:CreateTab("Credits", 4483362458) -- Title, Image
+local Label = Tab:CreateLabel("Devs: Vulcan and MakuGeb")
+local Label = Tab:CreateLabel("UI: Rayfield")
+
 --TPS
 
 local Tab = Window:CreateTab("Teleports") -- Title, Image
