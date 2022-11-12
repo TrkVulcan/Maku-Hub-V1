@@ -57,15 +57,39 @@ local Window = Rayfield:CreateWindow({
 local Tab = Window:CreateTab("Farm") -- Title, Image
 local Section = Tab:CreateSection("Farm")
 local Toggle = Tab:CreateToggle({
-    Name = "KillAura",
+    Name = "Insta Kill",
     CurrentValue = false,
-    Flag = "Killaura", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Flag = "Insta Kill", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
-        
+        InstaKillw = Value
+        InstaKill()      
     end
 })
 
-local Label = Tab:CreateLabel("Not Working")
+
+
+local Label = Tab:CreateLabel("Insta kills everything u punch")
+
+
+local Button = Tab:CreateButton({
+	Name = "No Cooldowns",
+	Callback = function()
+        local mod = require(game:GetService("ReplicatedStorage").Modules.Client["Player_skills_handler"])
+old1 = hookfunction(mod.KeyDown, function(a, b)
+   a.delay_between_moves = 0
+   a.waiting_for_action = false
+   return old1(a, b)
+end)
+old2 = hookfunction(mod.KeyUp, function(a, b)
+   a.waiting_for_action = false
+   return old2(a, b)
+end)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Label = Tab:CreateLabel("PRESS ONCE( Dont Spam Abilities)")
 
 --Player
 
@@ -145,6 +169,12 @@ spawn(function()
         end
     end
 end)
+
+--Credits
+
+local Tab = Window:CreateTab("Credits", 4483362458) -- Title, Image
+local Label = Tab:CreateLabel("Devs: Vulcan and MakuGeb")
+local Label = Tab:CreateLabel("UI: Rayfield")
 
 --TPS
 
