@@ -2,6 +2,10 @@ local client = game.Players.LocalPlayer;
 local char = client.Character;
 local root = char.HumanoidRootPart;
 
+
+
+
+
 getgenv().Speeds = false
 local client = game.Players.LocalPlayer
 
@@ -57,16 +61,39 @@ local Window = Rayfield:CreateWindow({
 local Tab = Window:CreateTab("Farm") -- Title, Image
 local Section = Tab:CreateSection("Farm")
 local Toggle = Tab:CreateToggle({
-    Name = "KillAura",
+    Name = "Insta Kill",
     CurrentValue = false,
-    Flag = "Killaura", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Flag = "Insta Kill", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
-        
+        InstaKillw = Value
+        InstaKill()      
     end
 })
 
 
-local Label = Tab:CreateLabel("Not Working")
+
+local Label = Tab:CreateLabel("Insta kills everything u punch")
+
+
+local Button = Tab:CreateButton({
+	Name = "No Cooldowns",
+	Callback = function()
+        local mod = require(game:GetService("ReplicatedStorage").Modules.Client["Player_skills_handler"])
+old1 = hookfunction(mod.KeyDown, function(a, b)
+   a.delay_between_moves = 0
+   a.waiting_for_action = false
+   return old1(a, b)
+end)
+old2 = hookfunction(mod.KeyUp, function(a, b)
+   a.waiting_for_action = false
+   return old2(a, b)
+end)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Label = Tab:CreateLabel("PRESS ONCE( Dont Spam Abilities)")
 
 --Player
 
@@ -512,24 +539,24 @@ local Button = Tab:CreateButton({
 	Name = "Player ESP",
 	Callback = function()
         local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local Highlight = Instance.new("Highlight")
-Highlight.Name = "Highlight"
-function ApplyToCurrentPlayers()
-    for i,player in pairs(Players:GetChildren()) do 
-        repeat wait() until player.Character
-        if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
-            local HighlightClone = Highlight:Clone()
-            HighlightClone.Adornee = player.Character
-            HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
-            HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-            HighlightClone.Name = "Highlight"
-        end
-    end
-end    
-RunService.Heartbeat:Connect(function()
-    ApplyToCurrentPlayers()
-end)
+        local RunService = game:GetService("RunService")
+        local Highlight = Instance.new("Highlight")
+        Highlight.Name = "Highlight"
+        function ApplyToCurrentPlayers()
+            for i,player in pairs(Players:GetChildren()) do 
+                repeat wait() until player.Character
+                if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+                    local HighlightClone = Highlight:Clone()
+                    HighlightClone.Adornee = player.Character
+                    HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+                    HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                    HighlightClone.Name = "Highlight"
+                end
+            end
+        end    
+        RunService.Heartbeat:Connect(function()
+            ApplyToCurrentPlayers()
+        end)
 		-- The function that takes place when the button is pressed
 	end,
 })
