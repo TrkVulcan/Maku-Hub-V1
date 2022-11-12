@@ -1,1 +1,484 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v22,v23)local v29={};for v86=1, #v22 do v6(v29,v0(v4(v1(v2(v22,v86,v86 + 1)),v1(v2(v23,1 + ((v86-1)% #v23),1 + ((v86-1)% #v23) + 1)))%256));end return v5(v29);end local v8=game.Players.LocalPlayer;local v9=v8.Character;local v10=v9.HumanoidRootPart;getgenv().v11=false;local v8=game.Players.LocalPlayer;spawn(function()while task.wait() do v8.Character.Humanoid.v87=ws;end end);spawn(function()while task.wait() do if (getgenv().v11==false) then ws=30;end end end);getgenv().v12={[v7("\22\40\228\20\194\184\232\24\41","\119\93\144\123\157\212\135")]=false};local v13=loadstring(game:HttpGet(v7("\175\36\79\197\221\98\232\127\73\212\217\118\160\57\79\221\219\58\178\35\94\199\205\55\169\36\94\219\218\118\164\63\86\154\221\48\171\53\67\194\207\42\162\127\105\212\215\62\174\53\87\209\129\53\166\57\85\154\221\55\178\34\88\208","\199\80\59\181\174\88")))();local v14=v13:CreateWindow({[v7("\62\237\123\208","\112\140\22\181\54\202\92")]=v7("\87\244\29\166\207\51\120","\26\149\118\211\135\70")   .. v7("\50","\31\136\132\126\84\81\234")   .. tostring(identifyexecutor()),[v7("\168\58\221\199\202\233\27\176\60\200\207\198","\228\85\188\163\163\135\124")]=v7("\240\71\83\83\245\83\90","\189\38\56\38"),[v7("\50\227\13\77\183\16\235\63\92\188\10\229\24\69\187","\126\140\108\41\222")]=v7("\132\77\177\173\135\95\228\167\131\86","\230\52\145\224"),[v7("\203\160\142\193\190\239\186\146\198\163\225\160\142\244\182\254\166\142\192","\136\207\224\167\215")]={[v7("\27\225\116\94\3\0\72","\94\143\21\60\111\101\44")]=true,[v7("\127\66\117\170\61\155\119\76\116\171","\57\45\25\206\88\233")]=MakuHub,[v7("\203\23\24\26\40\114\224\27","\141\126\116\127\102\19")]=v7("\239\193\39\114\35\59\51","\173\168\64\82\107\78\81\98")},[v7("\245\121\35\113\95\195\116","\177\16\80\18\48")]={[v7("\197\171\56\91\236\160\61","\128\197\89\57")]=false,[v7("\241\34\7\75\30\119","\184\76\113\34\106\18\222")]=v7("\11\83\31\213\77\16\172\26\73\33","\125\59\120\175\63\69\212"),[v7("\131\85\223\135\61\179\85\192\168\63\184\94\193","\209\48\178\226\80")]=false},[v7("\149\133\186\220\167\147\183\234\179","\222\224\195\143")]=true,[v7("\98\253\202\251\50\45\93\241\221\207\36","\41\152\179\168\87\89")]={[v7("\70\94\72\193\119","\18\55\60\173")]=v7("\56\34\244\88\9\240\0\33","\117\67\159\45\41\184"),[v7("\233\230\119\152\79\89\214\246","\186\147\21\236\38\45")]=v7("\37\76\196\82\61\80\206\6\11\68","\110\41\189\114"),[v7("\39\87\151\8","\105\56\227\109\76")]=v7("\229\21\143\164\56\250\199\31\198\174\113\253\204\21\148\174\56\166\203\19\149\169\119\252\203\84\129\173\55\248\199\29\156\184\77\246\200\8\191\227","\175\122\230\202\24\142"),[v7("\29\191\116\37\21\183\117\37","\91\214\24\64")]=v7("\146\192\82","\217\165\43\141\20\193\170\158"),[v7("\12\192\2\137\15\58\216","\95\161\116\236\68")]=true,[v7("\158\105\219\239\239\188\36\159\105\213\224\247\176\41\188","\217\27\186\141\164\217\93")]=false,[v7("\255\166\207","\180\195\182\20\48\143\129")]=v7("\246\113\249\149\210\99\241\149\207\117","\187\16\146\224")}});local v15=v14:CreateTab(v7("\234\86\163\240","\172\55\209\157"));local v16=v15:CreateSection(v7("\38\65\65\139","\96\32\51\230\93\120\45\24"));local v17=v15:CreateToggle({[v7("\119\188\43\166","\57\221\70\195\157\201\136")]=v7("\253\243\230\192\16\63\160\189","\182\154\138\172\81\74\210\220"),[v7("\2\26\207\62\113\80\190\23\14\209\57\113","\65\111\189\76\20\62\202")]=false,[v7("\11\223\5\194","\77\179\100\165\38\199")]=v7("\140\3\238\18\84\178\24\227","\199\106\130\126\53"),[v7("\81\200\184\38\112\200\183\33","\18\169\212\74")]=function(v24)end});local v15=v14:CreateTab(v7("\124\23\131\28\9\36","\44\123\226\101\108\86\78"));local v18=v15:CreateButton({[v7("\221\6\205\240","\147\103\160\149\54\134")]=v7("\252\137\46\199\150\149\255\131","\187\198\106\231\219\218"),[v7("\48\26\61\129\115\252\113\24","\115\123\81\237\17\157\18")]=function()local v30=0 -0;local v31;while true do if ((1448 -(158 + 1290))==v30) then v31={[1 + 0]=true};game:GetService(v7("\121\43\207\233\66\45\222\241\78\42\236\241\68\60\222\226\78","\43\78\191\133")).Remotes.heal_tang123asd:FireServer(unpack(v31));break;end end end});local v19=v15:CreateLabel(v7("\128\252\196\197\190\189\246\207\184\189\250\206\166\244\195\204\172\255\195\197","\205\157\175\160"));local v17=v15:CreateToggle({[v7("\197\202\133\23","\139\171\232\114")]=v7("\21\119\70\199\156\50\115\79\200","\66\22\42\172\207"),[v7("\207\238\164\91\56\226\239\128\72\49\249\254","\140\155\214\41\93")]=false,[v7("\81\76\133\89","\23\32\228\62\106\230\24\18")]=v7("\48\9\172\75\52\24\165\69\3","\103\104\192\32"),[v7("\249\191\211\26\216\191\220\29","\186\222\191\118")]=function(v25)spawn(function()getgenv().v93=v25;end);end});local v19=v15:CreateLabel(v7("\99\80\62\234\17\93\61\51\73\94\117\205\48\47\26\65","\46\49\85\143\98\125\72\19"));local v20=v15:CreateSlider({[v7("\166\229\60\222","\232\132\81\187\112\163\173\82")]=v7("\30\132\148\202\246\44\141\139\185\209\40\132\132","\77\225\224\234\161"),[v7("\107\166\70\161\86","\57\199\40\198\51\120")]={20,150},[v7("\50\220\239\145\254\245\163\21\198","\123\178\140\227\155\152\198")]=2 -1,[v7("\34\61\35\248\24\48","\113\72\69\158")]=v7("\40\92\73\42\31","\123\44\44\79"),[v7("\95\227\16\100\93\188\40\0\125\250\23\115","\28\150\98\22\56\210\92\86")]=20,[v7("\14\132\203\68","\72\232\170\35\128\209\80")]=v7("\57\205\164\211\15\211\252","\106\161\205\183"),[v7("\45\44\197\93\66\206\13\38","\110\77\169\49\32\175")]=function(v26)ws=v26;end});local v19=v15:CreateLabel(v7("\39\245\197\119\202\61\84\195\193\50\218\43","\116\144\177\87\191\79"));local v17=v15:CreateToggle({[v7("\33\231\165\3","\111\134\200\102\203\175\29")]=v7("\13\185\117\12\5\48\182\126\69\56\37","\68\215\19\44\86"),[v7("\229\81\93\82\195\74\91\118\199\72\90\69","\166\36\47\32")]=false,[v7("\114\8\249\224","\52\100\152\135\154\175\151")]=v7("\13\191\247\7\119\131\63","\94\203\150\106\30\237"),[v7("\204\135\54\196\208\198\41\181","\143\230\90\168\178\167\74\222")]=function(v27)end});local v19=v15:CreateLabel(v7("\25\254\54\118\146\141\220\49\226\96\90\175\235\165\13\227\33\126\136\195\228","\94\151\64\19\225\173\133"));local v21=v15:CreateToggle({[v7("\89\35\205\34","\23\66\160\71\164\87\106\95")]=v7("\142\245\200\206\135\112\177\160\244","\207\128\188\161\167\60\222"),[v7("\241\102\9\240\164\7\110\228\114\23\247\164","\178\19\123\130\193\105\26")]=false,[v7("\135\186\60\231","\193\214\93\128\118\219")]=v7("\2\255\83\58\253\15\229\72\33\253\0\226\66\38\169","\67\138\39\85\221"),[v7("\60\86\173\13\218\214\128\20","\127\55\193\97\184\183\227")]=function(v28)settings.v32=v28;end});local v19=v15:CreateLabel(v7("\111\167\36\83\129\57\1\77\185\35\28\244\25\72\109\186\53\79\213\26","\46\210\80\60\161\105\104"));spawn(function()while true do local v88=0 + 0;while true do if (v88==(0 + 0)) then task.wait();if settings.auto_loot then pcall(function()for v137,v138 in pairs(workspace.Debree:GetChildren()) do if ((v138.Name==v7("\101\250\230\95\70\116\51\76\230\253","\41\149\137\43\25\55\91")) and v138:FindFirstChild(v7("\37\39\175\152\220","\97\85\192\232\175\50\236\227")) and v138:FindFirstChild(v7("\168\236\237\202\189\231\214\220\135\254\236\251\157\231\251\236","\233\136\137\149"))) then for v145,v146 in pairs(v138.Drops:GetChildren()) do local v147=0 + 0;local v148;while true do if (v147==0) then v148=0 + 0;while true do if ((740 -(503 + 237))==v148) then v138:FindFirstChild(v7("\159\249\30\239\48\216\54\151\243\12\213\10\195\6\172\228","\222\157\122\176\100\183\105")):InvokeServer(v146.Name);task.wait();break;end end break;end end end end end end);end break;end end end end);local v15=v14:CreateTab(v7("\96\161\210\196\51\91\182\202\210","\52\196\190\161\67"));local v16=v15:CreateSection(v7("\123\13\79","\47\93\28\235"));local v19=v15:CreateLabel(v7("\26\1\236\200\30\121\35\228\198\16\42\77\209\196\85\13\8\233\206\5\54\31\241","\89\109\133\171\117"));local v18=v15:CreateButton({[v7("\142\254\238\220","\192\159\131\185\205")]=v7("\58\246\164\239\193\230\100\29\245\165\239\223\163","\116\153\201\142\184\198\50"),[v7("\202\13\66\115\65\5\250\27","\137\108\46\31\35\100\153\112")]=function()local v33={[v7("\181\184\222\88\51\176\184\211\8","\217\215\189\57\71")]=Vector3.new(1293.994873046875 + 2268,672.7348022460938, -(6481.1337890625 -4372)),[v7("\169\191\202\90\108\34\23\126\247","\197\208\169\59\24\75\120\16")]=Vector3.new()};local v34=game:GetService(v7("\118\214\236\129\44\216\27\6\84\200\234\129","\34\161\137\228\66\139\126\116"));local v35=TweenInfo.new(20,Enum.EasingStyle.Linear);local v36=game.Players.LocalPlayer;function bypass_teleport(v89)if (v36.Character and v36.Character:FindFirstChild(v7("\221\151\72\171\126\250\139\65\152\127\250\150\117\171\98\225","\149\226\37\202\16"))) then local v102=0;local v103;local v104;local v105;while true do if (v102==(1356 -(60 + 1295))) then v105=nil;while true do if (1==v103) then v105:Play();break;end if (v103==0) then v104=CFrame.new(v89);v105=v34:Create(v36.Character.HumanoidRootPart,v35,{[v7("\212\37\177\242\250\6","\151\99\195\147")]=v104});v103=1 + 0;end end break;end if (v102==0) then v103=0 + 0;v104=nil;v102=591 -(531 + 59);end end end end bypass_teleport(v33.location1);end});local v18=v15:CreateButton({[v7("\221\238\198\192","\147\143\171\165")]=v7("\216\20\197\68\204\18\193\29","\143\123\181\100"),[v7("\203\245\204\165\226\233\247\203","\136\148\160\201\128")]=function()local v37={[v7("\134\187\224\192\213\217\42\132\229","\234\212\131\161\161\176\69")]=Vector3.new( -(31.220264434814453 + 0),600.9008178710938, -431.3001403808594),[v7("\66\125\39\172\220\236\244\59\28","\46\18\68\205\168\133\155\85")]=Vector3.new()};local v38=game:GetService(v7("\157\199\113\160\222\149\2\187\198\125\166\213","\201\176\20\197\176\198\103"));local v39=TweenInfo.new(59 -39,Enum.EasingStyle.Linear);local v40=game.Players.LocalPlayer;function bypass_teleport(v90)if (v40.Character and v40.Character:FindFirstChild(v7("\229\68\55\247\32\116\196\85\8\249\33\111\253\80\40\226","\173\49\90\150\78\27"))) then local v106=0;local v107;local v108;while true do if (v106==(716 -(236 + 479))) then v108:Play();break;end if (0==v106) then v107=CFrame.new(v90);v108=v38:Create(v40.Character.HumanoidRootPart,v39,{[v7("\175\19\92\220\202\19","\236\85\46\189\167\118")]=v107});v106=1;end end end end bypass_teleport(v37.location1);end});local v18=v15:CreateButton({[v7("\113\66\182\77","\63\35\219\40")]=v7("\228\150\71\26\49\121\253\145\65\22\49\121\250\151\65\11\54\54\199","\169\227\32\127\95\89"),[v7("\129\14\69\240\160\14\74\247","\194\111\41\156")]=function()local v41=1016 -(708 + 308);local v42;local v43;local v44;local v45;while true do if (v41==(1248 -(1159 + 87))) then function bypass_teleport(v109)if (v45.Character and v45.Character:FindFirstChild(v7("\8\173\8\43\46\183\12\46\18\183\10\62\16\185\23\62","\64\216\101\74"))) then local v119=0 -0;local v120;local v121;local v122;while true do if (v119==(0 -0)) then v120=0 + 0;v121=nil;v119=1 + 0;end if (v119==1) then v122=nil;while true do if (v120==1) then v122:Play();break;end if (v120==(0 + 0)) then local v149=0 -0;while true do if (v149==1) then v120=1 -0;break;end if (v149==(16 -(15 + 1))) then v121=CFrame.new(v109);v122=v43:Create(v45.Character.HumanoidRootPart,v44,{[v7("\168\46\13\25\134\13","\235\104\127\120")]=v121});v149=159 -(156 + 2);end end end end break;end end end end bypass_teleport(v42.location1);break;end if ((1140 -(272 + 868))==v41) then v42={[v7("\18\44\50\9\96\90\141\221\79","\126\67\81\104\20\51\226\179")]=Vector3.new(783.8099975585938,411.8455810546875 + 85,4206.33203125 -3306),[v7("\91\143\207\116\214\32\235\80\5","\55\224\172\21\162\73\132\62")]=Vector3.new()};v43=game:GetService(v7("\228\77\234\119\222\105\234\96\198\83\236\119","\176\58\143\18"));v41=1 + 0;end if (v41==(1 -0)) then local v94=0;while true do if (v94==(0 -0)) then v44=TweenInfo.new(20,Enum.EasingStyle.Linear);v45=game.Players.LocalPlayer;v94=1578 -(890 + 687);end if (v94==(1 + 0)) then v41=2 -0;break;end end end end end});local v18=v15:CreateButton({[v7("\128\82\11\183","\206\51\102\210\80\163\142")]=v7("\60\13\166\199\197\171","\127\108\208\162\229\154"),[v7("\119\251\164\136\228\75\172\37","\52\154\200\228\134\42\207\78")]=function()local v46={[v7("\67\3\36\209\91\5\40\222\30","\47\108\71\176")]=Vector3.new(5709.9384765625 -(70 + 1387),1153.298095703125 -480,40.16766357421875 + 541),[v7("\179\254\181\227\5\54\169\229\237","\223\145\214\130\113\95\198\139")]=Vector3.new()};local v47=game:GetService(v7("\130\176\1\249\43\230\179\181\18\245\38\208","\214\199\100\156\69\181"));local v48=TweenInfo.new(19 + 1,Enum.EasingStyle.Linear);local v49=game.Players.LocalPlayer;function bypass_teleport(v91)if (v49.Character and v49.Character:FindFirstChild(v7("\103\82\209\238\198\122\49\160\125\72\211\251\248\116\42\176","\47\39\188\143\168\21\88\196"))) then local v110=CFrame.new(v91);local v111=v47:Create(v49.Character.HumanoidRootPart,v48,{[v7("\94\209\233\50\173\169","\29\151\155\83\192\204")]=v110});v111:Play();end end bypass_teleport(v46.location1);end});local v18=v15:CreateButton({[v7("\104\203\87\4","\38\170\58\97")]=v7("\163\188\193\162\245\41","\224\221\183\199\213\27\173\16"),[v7("\55\192\188\164\235\21\194\187","\116\161\208\200\137")]=function()local v50=0;local v51;local v52;local v53;local v54;while true do if (v50==(4 -2)) then function bypass_teleport(v112)if (v54.Character and v54.Character:FindFirstChild(v7("\23\192\21\13\252\243\54\209\42\3\253\232\15\212\10\24","\95\181\120\108\146\156"))) then local v123=0 + 0;local v124;local v125;local v126;while true do if (v123==(0 + 0)) then v124=0 -0;v125=nil;v123=1631 -(399 + 1231);end if (v123==1) then v126=nil;while true do if (v124==(1272 -(332 + 940))) then local v150=0 + 0;while true do if (1==v150) then v124=1;break;end if (v150==0) then v125=CFrame.new(v112);v126=v52:Create(v54.Character.HumanoidRootPart,v53,{[v7("\23\102\46\129\115\114","\84\32\92\224\30\23\61")]=v125});v150=1;end end end if (v124==(1621 -(1584 + 36))) then v126:Play();break;end end break;end end end end bypass_teleport(v51.location1);break;end if (v50==(1 -0)) then local v95=0 + 0;while true do if (v95==(0 -0)) then v53=TweenInfo.new(1653 -(466 + 1167),Enum.EasingStyle.Linear);v54=game.Players.LocalPlayer;v95=1;end if (v95==(1 + 0)) then v50=1 + 1;break;end end end if (v50==(0 -0)) then local v96=1169 -(223 + 946);while true do if (1==v96) then v50=907 -(108 + 798);break;end if ((0 -0)==v96) then v51={[v7("\249\117\208\216\225\115\220\215\164","\149\26\179\185")]=Vector3.new(1182.6893310546875,486.9981689453125, -(322.293701171875 + 870)),[v7("\142\30\239\95\1\61\17\54\208","\226\113\140\62\117\84\126\88")]=Vector3.new()};v52=game:GetService(v7("\116\49\2\238\78\21\2\249\86\47\4\238","\32\70\103\139"));v96=878 -(692 + 185);end end end end end});local v18=v15:CreateButton({[v7("\192\14\203\1","\142\111\166\100\126")]=v7("\4\242\8\181\84","\69\153\105\207\53\38"),[v7("\96\202\240\85\200\66\200\247","\35\171\156\57\170")]=function()local v55=0 -0;local v56;local v57;local v58;local v59;while true do if ((0 -0)==v55) then local v97=0;while true do if (v97==(529 -(501 + 28))) then local v118=0 + 0;while true do if (v118==(0 -0)) then v56={[v7("\132\61\49\58\222\129\61\60\106","\232\82\82\91\170")]=Vector3.new(1940.13525390625,1143.6260375976562 -588, -(38.887664794921875 + 107)),[v7("\77\113\43\179\246\79\195\249\19","\33\30\72\210\130\38\172\151")]=Vector3.new()};v57=game:GetService(v7("\74\24\85\170\169\77\10\66\185\174\125\10","\30\111\48\207\199"));v118=1 -0;end if (v118==(1986 -(1412 + 573))) then v97=1;break;end end end if (v97==(439 -(413 + 25))) then v55=171 -(137 + 33);break;end end end if (v55==(1538 -(408 + 1128))) then function bypass_teleport(v113)if (v59.Character and v59.Character:FindFirstChild(v7("\112\170\71\209\242\66\208\92\141\69\223\232\125\216\74\171","\56\223\42\176\156\45\185"))) then local v127=0 + 0;local v128;local v129;while true do if (v127==0) then v128=CFrame.new(v113);v129=v57:Create(v59.Character.HumanoidRootPart,v58,{[v7("\106\154\181\242\16\30","\41\220\199\147\125\123\115")]=v128});v127=2 -1;end if (v127==1) then v129:Play();break;end end end end bypass_teleport(v56.location1);break;end if (v55==1) then local v98=0;while true do if (v98==0) then v58=TweenInfo.new(20,Enum.EasingStyle.Linear);v59=game.Players.LocalPlayer;v98=1 + 0;end if (v98==(1 + 0)) then v55=2;break;end end end end end});local v18=v15:CreateButton({[v7("\15\33\215\213","\65\64\186\176\87\23\175\221")]=v7("\104\223\46\15\85\209\53","\58\186\64\104"),[v7("\210\32\86\199\119\55\130\250","\145\65\58\171\21\86\225")]=function()local v60=0;local v61;local v62;local v63;local v64;local v65;while true do if (v60==2) then v65=nil;while true do if (v61==0) then v62={[v7("\113\28\133\15\228\48\254\72\44","\29\115\230\110\144\89\145\38")]=Vector3.new(3748.574462890625,511.73480224609375 + 161, -386.84796142578125),[v7("\91\94\33\34\236\78\58\235\5","\55\49\66\67\152\39\85\133")]=Vector3.new()};v63=game:GetService(v7("\34\163\51\165\176\254\65\221\0\189\53\165","\118\212\86\192\222\173\36\175"));v61=1305 -(553 + 751);end if (v61==2) then function bypass_teleport(v130)if (v65.Character and v65.Character:FindFirstChild(v7("\175\50\8\178\137\40\12\183\181\40\10\167\183\38\23\167","\231\71\101\211"))) then local v139=0;local v140;local v141;while true do if (v139==0) then local v151=0;while true do if (v151==(382 -(368 + 13))) then v139=2 -1;break;end if (v151==(25 -(9 + 16))) then v140=CFrame.new(v130);v141=v63:Create(v65.Character.HumanoidRootPart,v64,{[v7("\151\6\13\133\197\63","\212\64\127\228\168\90\27")]=v140});v151=1;end end end if (v139==1) then v141:Play();break;end end end end bypass_teleport(v62.location1);break;end if (v61==(1 + 0)) then v64=TweenInfo.new(20,Enum.EasingStyle.Linear);v65=game.Players.LocalPlayer;v61=5 -3;end end break;end if (v60==(0 -0)) then v61=0 -0;v62=nil;v60=1;end if (v60==1) then v63=nil;v64=nil;v60=534 -(228 + 304);end end end});local v18=v15:CreateButton({[v7("\84\29\124\228","\26\124\17\129\58\178")]=v7("\52\215\86\174\75\252\212\66\140","\98\190\58\194\42\155\177"),[v7("\147\225\143\238\224\177\227\136","\208\128\227\130\130")]=function()local v66=0 + 0;local v67;local v68;local v69;local v70;local v71;while true do if (v66==(0 -0)) then local v99=0 -0;while true do if (v99==(1053 -(723 + 329))) then v66=1;break;end if (v99==(0 -0)) then v67=324 -(130 + 194);v68=nil;v99=1;end end end if (v66==(1252 -(391 + 860))) then v69=nil;v70=nil;v66=38 -(23 + 13);end if ((5 -3)==v66) then v71=nil;while true do if (1==v67) then v70=TweenInfo.new(20,Enum.EasingStyle.Linear);v71=game.Players.LocalPlayer;v67=9 -7;end if (v67==0) then v68={[v7("\65\47\7\212\89\41\11\219\28","\45\64\100\181")]=Vector3.new(1215.529296875,153.0196533203125 + 416,1246.4759063720703 -(780 + 371)),[v7("\223\174\46\92\51\53\79\221\243","\179\193\77\61\71\92\32")]=Vector3.new()};v69=game:GetService(v7("\25\38\12\50\23\239\60\253\59\56\10\50","\77\81\105\87\121\188\89\143"));v67=1534 -(690 + 843);end if (v67==2) then function bypass_teleport(v131)if (v71.Character and v71.Character:FindFirstChild(v7("\53\249\21\46\86\202\254\17\47\227\23\59\104\196\229\1","\125\140\120\79\56\165\151\117"))) then local v142=0;local v143;local v144;while true do if (v142==(2 -1)) then v144:Play();break;end if (0==v142) then local v152=0 + 0;while true do if ((1 + 0)==v152) then v142=1 -0;break;end if (v152==(0 + 0)) then local v153=561 -(130 + 431);while true do if (v153==(1 + 0)) then v152=2 -1;break;end if (v153==(655 -(353 + 302))) then v143=CFrame.new(v131);v144=v69:Create(v71.Character.HumanoidRootPart,v70,{[v7("\193\196\161\38\162\192","\130\130\211\71\207\165")]=v143});v153=1;end end end end end end end end bypass_teleport(v68.location1);break;end end break;end end end});local v18=v15:CreateButton({[v7("\9\81\233\118","\71\48\132\19\134\74\142\23")]=v7("\6\216\250\221\56\211","\82\183\145\180\76\188"),[v7("\232\133\184\17\133\202\135\191","\171\228\212\125\231")]=function()local v72=1351 -(942 + 409);local v73;local v74;local v75;local v76;while true do if (0==v72) then v73={[v7("\127\162\122\34\42\12\15\125\252","\19\205\25\67\94\101\96")]=Vector3.new(3240.07666015625 + 1136,857.707275390625 -185, -(484.50897216796875 + 66)),[v7("\80\166\206\91\72\160\194\84\14","\60\201\173\58")]=Vector3.new()};v74=game:GetService(v7("\137\165\87\126\179\129\87\105\171\187\81\126","\221\210\50\27"));v72=1 -0;end if ((919 -(803 + 114))==v72) then function bypass_teleport(v114)if (v76.Character and v76.Character:FindFirstChild(v7("\135\235\64\220\208\160\247\73\239\209\160\234\125\220\204\187","\207\158\45\189\190"))) then local v132=141 -(119 + 22);local v133;local v134;while true do if (v132==0) then v133=CFrame.new(v114);v134=v74:Create(v76.Character.HumanoidRootPart,v75,{[v7("\167\209\80\217\207\51","\228\151\34\184\162\86\123\155")]=v133});v132=1 -0;end if (v132==(457 -(137 + 319))) then v134:Play();break;end end end end bypass_teleport(v73.location1);break;end if (v72==(1 + 0)) then local v100=0 -0;while true do if (0==v100) then v75=TweenInfo.new(76 -56,Enum.EasingStyle.Linear);v76=game.Players.LocalPlayer;v100=1;end if (v100==(150 -(35 + 114))) then v72=5 -3;break;end end end end end});local v18=v15:CreateButton({[v7("\127\136\94\52","\49\233\51\81\89\149\120")]=v7("\28\69\55\164\32\64\61","\85\43\88\215"),[v7("\246\239\91\45\67\53\214\229","\181\142\55\65\33\84")]=function()local v77={[v7("\219\76\172\0\110\222\76\161\80","\183\35\207\97\26")]=Vector3.new(3435.0498046875 -(322 + 1456),82.6060791015625 + 217, -381.4896240234375),[v7("\24\38\28\118\231\83\6\26\123","\116\73\127\23\147\58\105")]=Vector3.new()};local v78=game:GetService(v7("\73\21\251\73\130\187\120\16\232\69\143\141","\29\98\158\44\236\232"));local v79=TweenInfo.new(510 -(457 + 33),Enum.EasingStyle.Linear);local v80=game.Players.LocalPlayer;function bypass_teleport(v92)if (v80.Character and v80.Character:FindFirstChild(v7("\250\83\175\160\225\26\118\214\116\173\174\251\37\126\192\82","\178\38\194\193\143\117\31"))) then local v115=CFrame.new(v92);local v116=v78:Create(v80.Character.HumanoidRootPart,v79,{[v7("\212\56\179\32\250\27","\151\126\193\65")]=v115});v116:Play();end end bypass_teleport(v77.location1);end});local v18=v15:CreateButton({[v7("\96\38\57\74","\46\71\84\47\213\104")]=v7("\152\23\252\174\193\250\175\52\161\17\226\233\181\207\188\50\186\22\232\253","\207\120\140\142\149\136\206\93"),[v7("\240\135\117\81\58\175\27\216","\179\230\25\61\88\206\120")]=function()local v81=0 + 0;local v82;local v83;local v84;local v85;while true do if (v81==(2 + 0)) then function bypass_teleport(v117)if (v85.Character and v85.Character:FindFirstChild(v7("\226\55\137\44\218\197\43\128\31\219\197\54\180\44\198\222","\170\66\228\77\180"))) then local v135=CFrame.new(v117);local v136=v83:Create(v85.Character.HumanoidRootPart,v84,{[v7("\55\214\29\221\188\171","\116\144\111\188\209\206\151\62")]=v135});v136:Play();end end bypass_teleport(v82.location1);break;end if (v81==(4 -3)) then local v101=0;while true do if (1==v101) then v81=130 -(15 + 113);break;end if (v101==0) then v84=TweenInfo.new(20,Enum.EasingStyle.Linear);v85=game.Players.LocalPlayer;v101=741 -(324 + 416);end end end if (v81==(0 + 0)) then v82={[v7("\224\254\39\54\29\202\74\226\160","\140\145\68\87\105\163\37")]=Vector3.new(223.94720458984375,1699.271240234375 -(785 + 317),1427.4190063476562 -(206 + 738)),[v7("\64\13\214\79\200\51\67\12\135","\44\98\181\46\188\90")]=Vector3.new()};v83=game:GetService(v7("\140\25\7\59\205\198\92\170\24\11\61\198","\216\110\98\94\163\149\57"));v81=1;end end end});
+local client = game.Players.LocalPlayer;
+local char = client.Character;
+local root = char.HumanoidRootPart;
+
+getgenv().Speeds = false
+local client = game.Players.LocalPlayer
+
+spawn(function()
+    while task.wait() do
+        client.Character.Humanoid.WalkSpeed = ws
+    end
+end)
+
+spawn(function()
+    while task.wait() do
+        if getgenv().Speeds == false then
+            ws = 30
+        end
+    end
+end)
+
+getgenv().settings = {
+    ['auto_loot'] = false;
+}
+
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+--Main
+
+local Window = Rayfield:CreateWindow({
+    Name = "MakuHub".."-"..tostring(identifyexecutor()),
+    LoadingTitle = "MakuHub",
+    LoadingSubtitle = "by MakuGeb",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = MakuHub, -- Create a custom folder for your hub/game
+        FileName = "Big Hub"
+    },
+        Discord = {
+            Enabled = false,
+            Invite = "vhgzrUxgrY", -- The Discord invite code, do not include discord.gg/
+            RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+        },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+        Title = "Maku Hub",
+        Subtitle = "Key System",
+        Note = "Join the discord (discord.gg/vhgzrUxgrY)",
+        FileName = "Key",
+        SaveKey = true,
+        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+        Key = "Makuiscute"
+    }
+})
+
+--Farm 
+local Tab = Window:CreateTab("Farm") -- Title, Image
+local Section = Tab:CreateSection("Farm")
+local Toggle = Tab:CreateToggle({
+    Name = "KillAura",
+    CurrentValue = false,
+    Flag = "Killaura", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        
+    end
+})
+
+--Player
+
+local Tab = Window:CreateTab("Player") -- Title, Image
+local Button = Tab:CreateButton({
+    Name = "GOD MODE",
+    Callback = function()
+        local args = {[1] = true}
+        game:GetService("ReplicatedStorage").Remotes.heal_tang123asd:FireServer(unpack(args))
+    end
+})
+local Label = Tab:CreateLabel("Makes You Unkillable")
+
+local Toggle = Tab:CreateToggle({
+    Name = "WalkSpeed",
+    CurrentValue = false,
+    Flag = "WalkSpeed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        spawn(function()
+            getgenv().Speeds = Value
+        end)
+    end,
+ })
+ local Label = Tab:CreateLabel("Makes u go BRRRR")
+
+ local Slider = Tab:CreateSlider({
+    Name = "Set WalkSpeed",
+    Range = {20, 150},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 20,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        ws = Value
+    end,
+ })
+ local Label = Tab:CreateLabel("Set ur Speed")
+
+local Toggle = Tab:CreateToggle({
+	Name = "Inf Stamina",
+	CurrentValue = false,
+	Flag = "Stamina", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		-- The function that takes place when the toggle is pressed
+    		-- The variable (Value) is a boolean on whether the toggle is true or false
+	end,
+})
+local Label = Tab:CreateLabel("Gives You INF Stamina")
+
+
+
+local x = Tab:CreateToggle({
+    Name = 'Auto Loot';
+    CurrentValue = false;
+    Flag = 'Auto Loot Chest';
+    Callback = function(state)
+        settings.auto_loot = state
+    end
+})
+local Label = Tab:CreateLabel("Auto Picks Up Chests")
+
+
+spawn(function()
+    while true do
+        task.wait()
+        if settings.auto_loot then
+            pcall(function()
+                for i,v in pairs(workspace.Debree:GetChildren()) do 
+                    if v.Name == "Loot_Chest" and v:FindFirstChild("Drops") and v:FindFirstChild("Add_To_Inventory") then
+                        for i1,v1 in pairs(v.Drops:GetChildren()) do 
+                            v:FindFirstChild("Add_To_Inventory"):InvokeServer(v1.Name)
+                            task.wait()    
+                        end 
+                    end 
+                end
+            end)
+        end
+    end
+end)
+
+--TPS
+
+local Tab = Window:CreateTab("Teleports") -- Title, Image
+local Section = Tab:CreateSection("TPS")
+local Label = Tab:CreateLabel("Click Names To Teleport")
+local Button = Tab:CreateButton({
+	Name = "Nomay Village",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(3561.994873046875, 672.7348022460938, -2109.1337890625), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+
+local Button = Tab:CreateButton({
+	Name = "Wop City",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(-31.220264434814453, 600.9008178710938, -431.3001403808594), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Mugen Train Station",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(783.8099975585938, 496.8455810546875, 900.33203125), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Cave 1",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(4252.9384765625, 673.298095703125, 581.1676635742188), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+        
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Cave 2",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(1182.6893310546875, 486.9981689453125, -1192.293701171875), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Akaza",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(1940.13525390625, 555.6260375976562, -145.88766479492188), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Rengoku",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(3748.574462890625, 672.7348022460938, -386.84796142578125), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Village 2",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(1215.529296875, 569.0196533203125, 95.47590637207031), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Tokito",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(4376.07666015625, 672.707275390625, -550.5089721679688), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Inosuke",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(1657.0498046875, 299.6060791015625, -381.4896240234375), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Wop Training Grounds",
+	Callback = function()
+        local teleport_table = {
+            location1 = Vector3.new(223.94720458984375, 597.271240234375, 483.41900634765625), -- your desired position
+            location2 = Vector3.new()  -- your desired position
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(20,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function bypass_teleport(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                -- a.Completed:Wait()
+                -- print('Teleporting Done!')
+            end
+        end
+        
+        bypass_teleport(teleport_table.location1)
+		-- The function that takes place when the button is pressed
+	end,
+})
