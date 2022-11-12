@@ -60,14 +60,27 @@ local Window = Rayfield:CreateWindow({
 --Farm 
 local Tab = Window:CreateTab("Farm") -- Title, Image
 local Section = Tab:CreateSection("Farm")
-local Toggle = Tab:CreateToggle({
-    Name = "Insta Kill",
-    CurrentValue = false,
-    Flag = "Insta Kill", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-    Callback = function(Value)
-        InstaKillw = Value
-        InstaKill()      
-    end
+local Button = Tab:CreateButton({
+	Name = "Insta Kill",
+	Callback = function()
+        _G_gay = true
+
+while _G_gay do
+wait(5)
+local args = {
+    [1] = "Scythe_Combat_Slash",
+    [2] = game:GetService("Players").LocalPlayer,
+    [3] = game:GetService("Players").LocalPlayer.Character,
+    [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [5] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+    [6] = 919,
+    [9] = 99999
+}
+
+game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
+end
+		-- The function that takes place when the button is pressed
+	end,
 })
 
 
