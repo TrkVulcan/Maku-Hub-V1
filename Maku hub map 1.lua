@@ -484,3 +484,34 @@ local Button = Tab:CreateButton({
 		-- The function that takes place when the button is pressed
 	end,
 })
+
+local Tab = Window:CreateTab("ESP") -- Title, Image
+local Section = Tab:CreateSection("Player ESP")
+local Button = Tab:CreateButton({
+	Name = "Player ESP",
+	Callback = function()
+        local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Highlight = Instance.new("Highlight")
+Highlight.Name = "Highlight"
+function ApplyToCurrentPlayers()
+    for i,player in pairs(Players:GetChildren()) do 
+        repeat wait() until player.Character
+        if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+            local HighlightClone = Highlight:Clone()
+            HighlightClone.Adornee = player.Character
+            HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+            HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            HighlightClone.Name = "Highlight"
+        end
+    end
+end    
+RunService.Heartbeat:Connect(function()
+    ApplyToCurrentPlayers()
+end)
+		-- The function that takes place when the button is pressed
+	end,
+})
+
+local Label = Tab:CreateLabel("Rejoin To Turn Off")
+
