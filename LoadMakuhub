@@ -1,8 +1,8 @@
-if game.PlaceId == 6152116144 then -- Anime Adventures
+if game.PlaceId == 6152116144 then -- Map 1
 	pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MakuGeb/Maku-Hub-V1/main/Maku%20hub%20map%201.lua"))() 
 	end)
-elseif game.PlaceId == 11468159863 then -- RoGhoul 
+elseif game.PlaceId == 11468159863 then -- Map 2
 	pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MakuGeb/Maku-Hub-V1/main/Maku%20Hub%20v1.lua"))() 
 	end)
